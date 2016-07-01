@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ListItem">
+        <attr name="photoSrc" format="reference"/>
+        <attr name="fromAccount" format="string"/>
+        <attr name="lastUpdated" format="string"/>
+        <attr name="lastMsg" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="Follow">
+        <attr name="target" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="MyCoordinatorLayout">
+    </declare-styleable>
+    <declare-styleable name="MyCoordinatorLayout_LayoutParams">
+        <attr name="behavior_class" format="string" />
+    </declare-styleable>
+</resources>

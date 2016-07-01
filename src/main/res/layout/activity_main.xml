@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.myapplication.MyCoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--<View
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:background="@android:color/holo_blue_light"/>
+
+    <View
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        custom:behavior_class="com.example.myapplication.MyBehavior2"
+        android:background="@android:color/holo_green_light"/>-->
+
+    <View
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        custom:behavior_class="com.example.myapplication.MyBehavior3"
+        android:background="@android:color/holo_blue_light"/>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        custom:behavior_class="com.example.myapplication.MyBehavior4"
+        android:translationZ="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_email" />
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/second"
+        android:layout_marginTop="128dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.AppCompat.Display3"
+                android:text="A\nB\nC\nD\nE\nF\nG\nH\nI\nJ\nK\nL\nM\nN\nO\nP\nQ\nR\nS\nT\nU\nV\nW\nX\nY\nZ"
+                android:background="@android:color/holo_red_light"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+
+</com.example.myapplication.MyCoordinatorLayout>
